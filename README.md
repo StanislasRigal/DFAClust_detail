@@ -440,7 +440,7 @@ head(ex_dfa_clust$trend_group2)
 
 # Download and extract data from https://www.gbif.org/occurrence/download?dataset_key=91fa1a0d-a208-40aa-8a6e-f2c0beb9b253 (an free account is necessary) (Type: Darwin Core Archive)
 
-bird_se_raw <- read.csv("raw_data/occurrence.txt", header = T, sep="\t")
+bird_se_raw <- read.csv("USER_DIRECTORY/occurrence.txt", header = T, sep="\t")
 
 # Cleaning data
 
@@ -703,7 +703,7 @@ for(i in 1:length(levels(as.factor(bird_se$code_sp)))){
 
 # Species names with Swedish and English names
 
-species_data_en_se <- read.csv("output/species_data_en_se.csv", header = T)
+species_data_en_se <- read.csv("species_data_en_se.csv", header = T)
 
 # Clean data 
 
